@@ -6,7 +6,7 @@ public class Main {
         checkLeapYear(year);
 
         int clientOS = 0;
-        int clientDeviceYear = 2019;
+        int clientDeviceYear = 2015;
         checkOS(clientOS, clientDeviceYear);
 
         int deliveryDistance = 13;
