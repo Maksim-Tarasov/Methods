@@ -31,15 +31,14 @@ public class Main {
     }
 
     public static void checkOS(int clientOS, int clientDeviceYear) {
-        int dateNow = LocalDate.now().getYear();
-        if (clientOS == 1 && clientDeviceYear >= dateNow) {
-            System.out.println("Установите версию приложения для Android по ссылке: ");
-        } else if (clientOS == 0 && clientDeviceYear >= dateNow) {
-            System.out.println("Установите версию приложения для iOS по ссылке: ");
-        } else if (clientOS == 1 && clientDeviceYear < dateNow) {
-            System.out.println("Установите облегчённую версию приложения для Android по ссылке: ");
+        if (clientOS == 1 && clientDeviceYear >= 2015) {
+            System.out.println("Установите версию приложения для Android  ");
+        } else if (clientOS == 0 && clientDeviceYear >= 2015) {
+            System.out.println("Установите версию приложения для iOS  ");
+        } else if (clientOS == 1 && clientDeviceYear < 2015) {
+            System.out.println("Установите облегчённую версию приложения для Android ");
         } else {
-            System.out.println("Установите облегчённую версию приложения для iOS по ссылке: ");
+            System.out.println("Установите облегчённую версию приложения для iOS по ");
         }
     }
 
