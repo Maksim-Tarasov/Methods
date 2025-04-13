@@ -9,7 +9,7 @@ public class Main {
         int clientDeviceYear = 2019;
         checkOS(clientOS, clientDeviceYear);
 
-        int deliveryDistance = 30;
+        int deliveryDistance = 13;
         int days = calculateDays(deliveryDistance);
         if (days > 0) {
             System.out.print("Потребуеться дней на доставку: " + days);
@@ -42,6 +42,7 @@ public class Main {
             System.out.println("Установите облегчённую версию приложения для iOS по ссылке: ");
         }
     }
+
     public static int calculateDays(int deliveryDistance) {
         if (deliveryDistance < 20) {
             return 1;
@@ -53,7 +54,6 @@ public class Main {
             return -1;
         }
     }
-
 }
 
 
